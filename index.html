@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Philippines - Watch TV Shows Online, Watch Movies Online (Clone)</title>
+    <meta content="watch movies, movies online, watch TV, TV online, TV shows online, watch TV shows, stream movies, stream tv, instant streaming, watch online, movies, watch movies Philippines, watch TV online, no download, full length movies" name="keywords"/>
+    <meta content="Watch Netflix movies &amp; TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more." name="description"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-touch-icon" content="https://assets.nflxext.com/en_us/layout/ecweb/netflix-app-icon_152.jpg"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-REn+pPwe2lkLjbL4p+0k77qE1gAeW5rkGVrI2xLcb0qME1CBf78DteIj8+ThwYlUWQX8q7G8+tz3X0yQbkZPbA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="images/netflix-logo.png" alt="Netflix Logo">
+            </a>
+            <div class="dropdown__container">
+    <button class="dropdown-toggle">
+        <span class="language-icon">文A</span>
+        <span class="arrow-down"></span>
+    </button>
+    <div class="dropdown-content">
+        <a href="#" class="selected">English</a>
+        <a href="#">Filipino</a>
+    </div>
+    </div>
+            <button class="signin__button">Sign in</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="email-form" id="email-form">
+                <input type="email" placeholder="Email address" class="placeholder-white">
+                <button type="submit" class="btn btn-primary"><strong>Get Started</strong></button>
+            </form>
+        </section>
+        
+         <div class="seperation"></div>
+        
+        <section class="tv-section">
+    <div class="tv-content">
+        <h2>Enjoy on your TV</h2>
+        <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+    </div>
+    <div class="tv-image">
+        <img src="images/tv-frame.png" alt="TV Frame" class="tv-frame">
+        <div class="tv-video-container">
+            <video autoplay loop muted playsinline class="tv-video">
+                <source src="images/tv-video.m4v" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+
+ <div class="seperation"></div>
+
+<section class="download-section">
+    <div class="download-content">
+        <h2>Download your shows to watch offline</h2>
+        <p>Save your favorites easily and always have something to watch.</p>
+    </div>
+    <div class="download-image">
+        <img src="images/stranger-things-phone.png" alt="Stranger Things on phone" class="phone-image">
+        <div class="download-animation">
+            <img src="images/boxshot.png" alt="Stranger Things poster" class="show-icon">
+            <div class="download-text">
+                <span class="show-title">Stranger Things</span>
+                <span class="download-status">Downloading...</span>
+            </div>
+            <img src="images/download-icon.gif" alt="Download animation" class="download-icon">
+        </div>
+    </div>
+</section>
+
+ <div class="seperation"></div>
+
+<section class="tv-section">
+    <div class="tv-content">
+        <h2>Watch everywhere</h2>
+        <br>
+        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+    </div>
+</section>
+
+ <div class="seperation"></div>
+ 
+ <section class="tv-section">
+    <div class="tv-content">
+        <h2>Create profiles for kids</h2>
+        <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+    </div>
+    <div class="tv-image">
+        <img src="images/tv-image.png" alt="TV Frame" class="tv-frame">
+    </div>
+</section>
+
+ <div class="seperation"></div>
+
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+        <div class="faq-item">
+            <button class="faq-question">
+                What is Netflix?
+                <svg viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>
+            </button>
+            <div class="faq-answer">
+                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+                <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                How much does Netflix cost?
+                <svg viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>
+            </button>
+            <div class="faq-answer">
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₱149 to ₱549 a month. No extra costs, no contracts.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                Where can I watch?
+                <svg viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>
+            </button>
+            <div class="faq-answer">
+                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-question">
+                How do I cancel?
+                <svg viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>
+            </button>
+            <div class="faq-answer">
+                <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                What can I watch on Netflix?
+                <svg viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>
+            </button>
+            <div class="faq-answer">
+                <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                Is Netflix good for kids?
+                <svg viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>
+            </button>
+            <div class="faq-answer">
+                <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space. Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <div class="seperation"></div>
+
+<section class="signup-section">
+  <h1>Ready to watch? Enter your email to create or restart your membership.</h1>
+  <form class="signup-form">
+    <input type="email" placeholder="Email address" required>
+    <button type="submit"><strong>Get Started</strong></button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-heading">Questions? Contact us.</p>
+    <div class="footer-links">
+      <div class="footer-column">
+        <a href="#">FAQ</a>
+        <a href="#">Account</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Redeem Gift Cards</a>
+        <a href="#">Ways to Watch</a>
+      </div>
+      <div class="footer-column">
+        <a href="#">Help Center</a>
+        <a href="#">Media Center</a>
+        <a href="#">Jobs</a>
+        <a href="#">Buy Gift Cards</a>
+        <a href="#">Terms of Use</a>
+      </div>
+      <div class="footer-column">
+        <a href="#">Privacy</a>
+        <a href="#">Cookie Preferences</a>
+        <a href="#">Corporate Information</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="footer-column">
+        <a href="#">Speed Test</a>
+        <a href="#">Legal Notices</a>
+        <a href="#">Only on Netflix</a>
+      </div>
+    </div>
+    <div class="language-selector">
+      <select>
+        <option value="en">English</option>
+        <option value="fil">Filipino</option>
+      </select>
+    </div>
+    <div class="footer-column">
+      <br>
+        <a href="#">Netflix Philippines</a>
+      </div>
+  </div>
+</footer>
+        
+        <section class="content-row">
+            <h2>Popular on Netflix</h2>
+            <div class="content-slider">
+                <div class="content-item"><img src="images/trends1.jpeg" alt="Content 1"></div>
+                <div class="content-item"><img src="images/trends2.jpeg" alt="Content 2"></div>
+                <div class="content-item"><img src="images/trends3.jpeg" alt="Content 3"></div>
+                <div class="content-item"><img src="images/trends4.jpeg" alt="Content 4"></div>
+                <div class="content-item"><img src="images/trends5.jpg" alt="Content 5"></div>
+                <div class="content-item"><img src="images/trends6.jpeg" alt="Content 6"></div>
+                <div class="content-item"><img src="images/trends7.jpg" alt="Content 6"></div>
+                <div class="content-item"><img src="images/trends8.jpeg" alt="Content 7"></div>
+                <div class="content-item"><img src="images/trends9.jpeg" alt="Content 8"></div>
+                <div class="content-item"><img src="images/trends10.jpeg" alt="Content 9"></div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
